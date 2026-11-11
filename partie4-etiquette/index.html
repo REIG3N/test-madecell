@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aperçu étiquette</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form id="form">
+    <label for="inputLot">Identifiant lot</label>
+    <input id="inputLot" type="text" required minlength="3">
+
+    <label for="selectType">Type</label>
+    <select id="selectType">
+      <option value="reception">Réception</option>
+      <option value="production">Production</option>
+      <option value="expedition">Expédition</option>
+    </select>
+
+    <label for="isCompliant">
+      <input id="isCompliant" type="checkbox">
+      Non conforme
+    </label>
+
+    <p id="warning" hidden>Attention - lot signalé</p>
+
+    <button id="submitButton" type="submit" disabled>Générer l'aperçu</button>
+  </form>
+
+  <div id="preview" hidden></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
