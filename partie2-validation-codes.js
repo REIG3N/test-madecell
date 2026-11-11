@@ -40,4 +40,4 @@ function formatProductCode(code3) {
   return null
 }
 
-export { isValidProductCode };
+export { isValidProductCode, formatProductCode };
